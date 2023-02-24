@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <script
+      src="https://kit.fontawesome.com/32d7c5bace.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <!-- timer -->
+    <h2 class="clock"></h2>
+    <!-- header -->
+    <div class="header">
+      <h1>DashBoard</h1>
+      <button class="writeBtn">신규</button>
+    </div>
+
+    <!-- 글 작성 -->
+    <div class="writeForm hidden">
+      <i class="fas fa-times closeModal"></i>
+      <form class="formExample" autocomplete="off">
+        <div class="formTitle">
+          <label for="postTitle">제목</label>
+          <input
+            type="text"
+            name="postTitle"
+            id="postTitle"
+            placeholder="제목 입력"
+            maxlength="20"
+            required
+          />
+        </div>
+
+        <div class="formAuthor">
+          <label for="postAuthor">글쓴이</label>
+          <input
+            type="text"
+            name="postAuthor"
+            id="postAuthor"
+            placeholder="글쓴이 입력"
+            maxlength="8"
+            required
+          />
+        </div>
+
+        <div class="formText">
+          <textarea
+            class="postText"
+            placeholder="내용 입력"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <div class="formBtnContainer">
+          <button class="formSave">저장</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- 글 읽기 -->
+    <div class="background hidden"></div>
+    <div class="readForm hidden">
+      <i class="fas fa-times closeRead"></i>
+      <div class="readContainer">
+        <span>제목</span>
+        <span class="readTitle"></span>
+        <span>글쓴이</span>
+        <span class="readAuthor"></span>
+      </div>
+      <div class="readArea">
+        <div class="readText"></div>
+      </div>
+    </div>
+
+    <!-- 글 목록 -->
+    <table class="textList"></table>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+.clock {
+  padding: 0 16px;
+  text-align: right;
+}
+
+.header {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.writeBtn {
+  background-color: cornflowerblue;
+  color: #fff;
+  height: 36px;
+  width: 84px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.writeBtn:hover {
+  scale: 1.1;
+}
+
+/* write form */
+.hidden {
+  display: none;
+}
+
+.writeForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+
+  background-color: #e5e5e5;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* read form */
+.readForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+
+  background-color: #e5e5e5;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  height: 70vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.fas {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: red;
+  scale: 1.1;
+}
+
+.formBtnContainer {
+  display: flex;
+}
+
+.formSave {
+  background-color: cornflowerblue;
+  color: #fff;
+  height: 38px;
+  width: 85px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+}
+
+.formSave:hover {
+  scale: 1.1;
+}
+
+.formTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.formAuthor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#postTitle {
+  width: 85%;
+  padding: 3px 3px;
+}
+
+#postAuthor {
+  width: 85%;
+  padding: 3px 3px;
+}
+
+.postText {
+  width: 100%;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.readContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.readTitle {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.readAuthor {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 28%;
+}
+
+.readArea {
+  width: 100%;
+}
+
+.readText {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 50vh;
+}
+
+/* post list */
+.textList {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 15px;
+  height: 60vh;
+}
+
+.textItem {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+}
+
+.title:hover {
+  color: #6100ff;
+}
+
+.author {
+  color: #787878;
+}
+
+.btn {
+  height: 24px;
+  width: 65px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.edit {
+  background-color: #2add67;
+  margin-right: 5px;
+}
+
+.edit:hover {
+  scale: 1.1;
+}
+
+.delete {
+  background-color: tomato;
+}
+
+.delete:hover {
+  scale: 1.1;
+}
